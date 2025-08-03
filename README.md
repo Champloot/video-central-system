@@ -33,7 +33,7 @@ graph LR
 ### Установка
 ```bash
 # Клонировать репозиторий
-git clone https://github.com/ваш-аккаунт/video-central-system.git
+git clone https://github.com/Champloot/video-central-system.git
 cd video-central-system
 
 # Установить зависимости сервера
