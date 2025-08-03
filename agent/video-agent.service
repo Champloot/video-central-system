@@ -1,0 +1,14 @@
+[Unit]
+Description=Video Agent Service
+After=network.target
+
+[Service]
+Type=simple
+User=agent-user
+WorkingDirectory=/opt/video-agent
+ExecStart=/usr/bin/php /opt/video-agent/agent.php
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
