@@ -42,3 +42,8 @@ composer install
 
 # Настройка (см. подробное руководство в docs/setup_guide.md)
 ```
+
+## Документация
+- [Руководство по установке](docs/setup_guide.md)
+- [Архитектура системы](docs/architecture.md)
+- [Тестовые процедуры](docs/test_procedures.md)
