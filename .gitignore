@@ -1,0 +1,25 @@
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Конфиденциальные данные
+*.env
+*.key
+*.pem
+*_token.txt
+/devices.json
+/active_sessions.json
+
+# Логи
+*.log
+
+# Зависимости и бинарные файлы
+/vendor/
+/node_modules/
+/composer.lock
+/storage/
+/commands/
+
+# Временные файлы
+/tmp/
+/agent/tmp/
