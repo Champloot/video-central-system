@@ -22,5 +22,5 @@
 
 ## Документация
 - [Руководство по установке](docs/setup_guide.md)
-- [Архитектура системы](docs/architecture.md)
+- [Архитектура системы](docs/architecture.mmd)
 - [Тестовые процедуры](docs/test_procedures.md)
