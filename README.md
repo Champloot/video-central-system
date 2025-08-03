@@ -24,24 +24,9 @@ graph LR
 - Symfony HTTP Foundation (для сервера)
 - Systemd для управления сервисами
 
-## Быстрый старт
-
-### Требования
+## Требования
 - Сервер: Ubuntu 22.04, PHP 8.1, Composer
 - Агент: Ubuntu 22.04, PHP 8.1, FFmpeg
-
-### Установка
-```bash
-# Клонировать репозиторий
-git clone https://github.com/Champloot/video-central-system.git
-cd video-central-system
-
-# Установить зависимости сервера
-cd server
-composer install
-
-# Настройка (см. подробное руководство в docs/setup_guide.md)
-```
 
 ## Документация
 - [Руководство по установке](docs/setup_guide.md)
