@@ -13,11 +13,11 @@ $response = new Response();
 
 // Конфигурация
 $config = [
-    'auth_token' => 'SECRET_TOKEN_123',            // Секретный ключ для авторизации API
-    'storage_path' => __DIR__.'/storage',          // Директория для хранения видеофайлов
-    'devices_file' => __DIR__.'/devices.json',     // Файл с информацией о зарегистрированных устройствах
-    'commands_dir' => __DIR__.'/commands',         // Директория для временного хранения команд
-    'log_file' => __DIR__.'/server.log'            // Файл для системного логгирования
+    'auth_token' => 'SECRET_TOKEN_123',				// Секретный ключ для авторизации API
+    'storage_path' => __DIR__.'/storage',			// Директория для хранения видеофайлов
+	'devices_file' => __DIR__.'/devices.json',		// Файл с информацией о зарегистрированных устройствах
+    'commands_dir' => __DIR__.'/commands',			// Директория для временного хранения команд
+    'log_file' => __DIR__.'/server.log'				// Файл для системного логгирования
 ];
 
 // Функция логирования
@@ -70,11 +70,11 @@ if ($path === '/register' && $request->isMethod('POST')) {
 
         // Сохранение информации об устройстве
         $devices[$deviceId] = [
-            'ip' => $request->getClientIp(),            // IP устройства
-            'last_seen' => date('c'),                   // Время последней активности
-            'status' => 'online',                       // Текущий статус
-            'version' => $data['version'] ?? '1.0',     // Версия ПО агента
-            'cameras' => $data['cameras'] ?? []         // Список подключенных камер
+            'ip' => $request->getClientIp(),			// IP устройства
+            'last_seen' => date('c'),					// Время последней активности
+            'status' => 'online',						// Текущий статус
+            'version' => $data['version'] ?? '1.0',		// Версия ПО агента
+            'cameras' => $data['cameras'] ?? []			// Список подключенных камер
         ];
 
         // Сохранение обновленных данных
