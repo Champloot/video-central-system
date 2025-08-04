@@ -1,11 +1,11 @@
 <?php
 class VideoAgent {
-    private $config;
-    private $activeRecordings = [];
-    private $completedRecordings = [];
+    private $config;			// Конфигурация агента
+    private $activeRecordings = [];	// Активные записи
+    private $completedRecordings = [];	// Завершенные записи (ожидают загрузки)
 
     public function __construct() {
-        $this->loadConfig();
+        $this->loadConfig(); // Инициализация конфигурации
     }
 
     private function loadConfig() {
