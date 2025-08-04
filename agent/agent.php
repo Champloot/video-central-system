@@ -8,22 +8,24 @@ class VideoAgent {
         $this->loadConfig(); // Инициализация конфигурации
     }
 
+    // Загрузка конфигурации агента
     private function loadConfig() {
         $this->config = [
-            'device_id' => 'AGENT-' . substr(md5(gethostname()), 0, 8),
-            'central_server' => 'http://10.8.0.1:8000',
-            'auth_token' => 'SECRET_TOKEN_123',
-            'cameras' => [
+            'device_id' => 'AGENT-' . substr(md5(gethostname()), 0, 8),	// Уникальный ID на основе имени хоста
+            'central_server' => 'http://10.8.0.1:8000',			// Адрес сервера управления
+            'auth_token' => 'SECRET_TOKEN_123',				// Токен авторизации
+            'cameras' => [						// Конфигурация камер
                 'cam1' => 'rtsp://admin:password@192.168.1.198/stream1',
                 'cam2' => 'rtsp://admin:password@192.168.1.100/stream1',
                 'cam3' => 'rtsp://admin:password@192.168.1.101/stream1'
             ],
-            'temp_dir' => __DIR__.'/tmp',
-            'log_file' => __DIR__.'/agent.log',
-            'check_interval' => 5,
-            'version' => '1.1.0'
+            'temp_dir' => __DIR__.'/tmp',				// Временная директория для видео
+            'log_file' => __DIR__.'/agent.log',				// Файл логов
+            'check_interval' => 5,					// Интервал проверки команд (сек)
+            'version' => '1.1.0'					// Версия ПО агента
         ];
 
+	// Создание необходимых директорий
         foreach ([$this->config['temp_dir'], dirname($this->config['log_file'])] as $dir) {
             if (!is_dir($dir)) {
                 mkdir($dir, 0777, true);
