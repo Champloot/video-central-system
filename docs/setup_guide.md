@@ -66,7 +66,7 @@ sudo systemctl status video-central
 #### **1. Установка ПО**
 ```bash
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y php-cli ffmpeg git wireguard
+sudo apt install -y php-cli ffmpeg git wireguard php-curl
 ```
 
 #### **2. Настройка WireGuard**
