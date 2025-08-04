@@ -15,9 +15,9 @@ class VideoAgent {
             'central_server' => 'http://10.8.0.1:8000',			// Адрес сервера управления
             'auth_token' => 'SECRET_TOKEN_123',				// Токен авторизации
             'cameras' => [						// Конфигурация камер
-                'cam1' => 'rtsp://admin:password@192.168.1.198/stream1',
-                'cam2' => 'rtsp://admin:password@192.168.1.100/stream1',
-                'cam3' => 'rtsp://admin:password@192.168.1.101/stream1'
+                'cam1' => 'rtsp://admin:password@192.168.1.101/stream1',
+                'cam2' => 'rtsp://admin:password@192.168.1.102/stream1',
+                'cam3' => 'rtsp://admin:password@192.168.1.103/stream1'
             ],
             'temp_dir' => __DIR__.'/tmp',				// Временная директория для видео
             'log_file' => __DIR__.'/agent.log',				// Файл логов
