@@ -42,7 +42,7 @@ sudo chown $USER:$USER /opt/video-central
 cd /opt/video-central
 ```
 
-#### **4. Код центрального сервера (`central_server.php`)**
+#### **4. Код центрального сервера (`/opt/video-central/central_server.php`)**
 
 #### **5. Установка зависимостей**
 ```bash
@@ -104,7 +104,7 @@ sudo chown $USER:$USER /opt/video-agent
 cd /opt/video-agent
 ```
 
-#### **4. Код агента (`agent.php`)**
+#### **4. Код агента (`/opt/video-agent/agent.php`)**
 
 #### **5. Systemd сервис (`/etc/systemd/system/video-agent.service`)**
 
