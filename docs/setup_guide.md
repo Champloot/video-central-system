@@ -25,8 +25,12 @@ PostUp = iptables -A FORWARD -i wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o
 PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
 
 [Peer]
-PublicKey = <ПУБЛИЧНЫЙ_КЛЮЧ_АГЕНТА>
+PublicKey = <ПУБЛИЧНЫЙ_КЛЮЧ_АГЕНТА_1>
 AllowedIPs = 10.8.0.2/32
+
+[Peer]
+PublicKey = <ПУБЛИЧНЫЙ_КЛЮЧ_АГЕНТА_X>
+AllowedIPs = 10.8.0.X/32
 ```
 
 **Запустите VPN:**
